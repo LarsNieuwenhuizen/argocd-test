@@ -5,4 +5,5 @@ namespace: argocd
 
 resources:
   - spec-namespace.yaml
-  - ../../releases/v1.8.3/
+  - ../../releases/v1.8.3
+  - ../../argo-apps
