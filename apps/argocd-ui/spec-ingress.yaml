@@ -7,7 +7,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`cd.larsnieuwenhuizen.nl`)  && Headers(`Content-Type`, `application/grpc`)
+    - match: Host(`cd.larsnieuwenhuizen.nl`)
       kind: Rule
       middlewares:
         - name: redirect-to-https
