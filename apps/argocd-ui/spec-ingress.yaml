@@ -12,10 +12,6 @@ spec:
       middlewares:
         - name: redirect-to-https
           namespace: default
-      services:
-        - name: argocd-server
-          namespace: argocd
-          port: 80
 
 ---
 apiVersion: traefik.containo.us/v1alpha1
@@ -31,6 +27,6 @@ spec:
       services:
         - name: argocd-server
           namespace: argocd
-          port: 80
+          port: 443
   tls:
     certResolver: le
