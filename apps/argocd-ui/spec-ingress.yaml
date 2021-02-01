@@ -3,6 +3,7 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: argocdui-https
+  namespace: argocd
 spec:
   entryPoints:
     - websecure
