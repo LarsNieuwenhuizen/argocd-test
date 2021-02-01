@@ -12,7 +12,10 @@ spec:
       middlewares:
         - name: redirect-to-https
           namespace: default
-
+      services:
+        - name: argocd-server
+          namespace: argocd
+          port: 443
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
