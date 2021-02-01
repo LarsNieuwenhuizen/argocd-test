@@ -12,9 +12,6 @@ spec:
       middlewares:
         - name: redirect-to-https
           namespace: default
-      services:
-        - name: argocd-server
-          port: 80
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
@@ -24,12 +21,6 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - kind: Rule
-      match: Host(`cd.larsnieuwenhuizen.nl`)
-      priority: 10
-      services:
-        - name: argocd-server
-          port: 80
     - kind: Rule
       match: Host(`cd.larsnieuwenhuizen.nl`) && Headers(`Content-Type`, `application/grpc`)
       priority: 11
