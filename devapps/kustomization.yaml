@@ -3,6 +3,6 @@ kind: Kustomization
 
 resources:
   - ghost.yaml
+  - argocd-ui.yaml
 # - traefik.yaml
 #  - nginx.yaml
-#  - argocd-ui.yaml
