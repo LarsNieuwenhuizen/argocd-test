@@ -5,4 +5,4 @@ resources:
   - ghost.yaml
   - argocd-ui.yaml
   - postgres.yaml
-#  - nginx.yaml
+  - bjd.yaml
