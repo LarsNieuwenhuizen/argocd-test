@@ -6,4 +6,5 @@ resources:
   - argocd-ui.yaml
   - postgres.yaml
   - bjd.yaml
+  - bjd-runner.yaml
   - hub.yaml
