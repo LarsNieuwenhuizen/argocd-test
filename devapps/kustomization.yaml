@@ -7,3 +7,4 @@ resources:
   - postgres.yaml
   - bjd.yaml
   - hub.yaml
+  - sparkell.yaml
