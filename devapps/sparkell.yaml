@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: sparkell-prod
     server: https://kubernetes.default.svc
-  project: sparkell-prod
+  project: sparkell
   source:
     path: Deployment/digitalocean/prod
     repoURL: git@github.com:LarsNieuwenhuizen/SparKell.git
