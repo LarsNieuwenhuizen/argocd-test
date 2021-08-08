@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sparkell-prod
+spec:
+  destination:
+    namespace: sparkell-prod
+    server: https://kubernetes.default.svc
+  project: sparkell-prod
+  source:
+    path: Deployment/digitalocean/prod
+    repoURL: git@github.com:LarsNieuwenhuizen/SparKell.git
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
