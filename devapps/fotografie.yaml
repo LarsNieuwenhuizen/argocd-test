@@ -11,7 +11,7 @@ spec:
   source:
     path: Deployment/digitalocean/prod
     repoURL: git@github.com:LarsNieuwenhuizen/Fotografie.git
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
