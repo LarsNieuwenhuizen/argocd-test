@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: fotografie-prod
+spec:
+  destination:
+    namespace: fotografie-prod
+    server: https://kubernetes.default.svc
+  project: fotografie
+  source:
+    path: Deployment/digitalocean/prod
+    repoURL: git@github.com:LarsNieuwenhuizen/Fotografie.git
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
