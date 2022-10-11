@@ -12,7 +12,7 @@ then
   exit 1
 else
   VERSION=${1}
-  URL="https://raw.githubusercontent.com/argoproj/argo-cd/${VERSION}/manifests/ha/install.yaml"
+  URL="https://raw.githubusercontent.com/argoproj/argo-cd/${VERSION}/manifests/install.yaml"
 fi
 
 Test if url exists
