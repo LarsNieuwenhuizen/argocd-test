@@ -6,5 +6,4 @@ resources:
   - argocd-ui.yaml
   - postgres.yaml
   - hub.yaml
-  - sparkell.yaml
   - fotografie.yaml
